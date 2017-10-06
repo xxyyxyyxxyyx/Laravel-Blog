@@ -3,6 +3,8 @@
 @section('stylesheets')
     <link rel="stylesheet" href="{{asset('css/parsley.css')}}">
 @endsection
+
+
 @section('content')
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
@@ -12,7 +14,9 @@
                 <div class="col-md-8 col-md-offset-2"><h1>Create New Post</h1>
                     <hr>
                     <form data-parsley-validate method="POST" action="{{ route('posts.store') }}">
-                        <div class="form-group"><label name="title">Title:</label> <input id="title" name="title" class="form-control" required maxlength="255">
+                        <div class="form-group"><label name="title">Title:</label> <input id="title" name="title"
+                                                                                          class="form-control" required
+                                                                                          maxlength="255">
                         </div>
                         <div class="form-group">
                             <label name="body">Post Body:</label>
